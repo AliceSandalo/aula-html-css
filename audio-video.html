@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/mm.ico" type="image/x-icon">
+    <title>Testando áudios e vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Treinando com áudio e vídeos</h1>
+    <p>
+        Olá pessoal, essa área foi feita para meus teste com arquivos de áudio e vídeos, aproveitem o show.
+    </p>
+    <hr>
+    <a href="principal.html">Voltar para principal</a>
+    <hr>
+    <p>
+        <h2>Testando áudio <br></h2>
+
+    <hr>
+    <p>Teste 1: Tags - audio + src + controls (abrir controles da caixa de áudio) + autoplay (da play automático)</p>
+        <audio src="audio-video/mp3.teste.mp3" controls loop>Teste audio</audio><br>
+        <a href="audio-video/mp3.teste.mp3" download="audio-video/mp3.teste.mp3">baixe o áudio</a>
+    <hr>
+
+    <p>Teste 2: Tags - audio + preload + matadata + controls + autoplay + soucrce/src + type </p>
+<!--TAG preload pode ter 3 opçoes (auto, metadata, none)-->
+<!--TAG controles de audio (controls, autoplay, loop)-->
+<!--TAG Source src - pode acrescentar mais formatos de áudio, 3 formatos suportados (MP3, ogg, Wav)-->
+    <audio preload="metadata" controls loop>
+    <source src="audio-video/mp3.teste.mp3" type="audio/mpeg">
+    </audio><br>
+    <a href="audio-video/mp3.teste.mp3" download="audio-video/mp3.teste.mp3">baixe o áudio</a> 
+    <hr>
+
+    <h2>Testando vídeos hospedados</h2><br>
+
+    <hr>
+    Teste 1 (vídeos local): Video/src + controls (abrir controles de play) + autoplay (da play automático)<br>
+    <video src="audio-video/mp4.teste.mp4" width="400" controls> meu vídeo</video>
+    <p>
+        <a href="audio-video/mp4.teste.mp4" download="audio-video/mp4.teste.mp4">baixe o vídeo aqui</a>
+    </p><br><hr>
+    Teste 2 (vídeos local): video + controls + autoplay = source/src + type <br>
+    <video controls width="400">
+        <source src="audio-video/mp4.teste.mp4" type="video/mp4"> 
+        <a href="audio-video/mp4.teste.mp4" download="audio-video/mp4.teste.mp4">Se o vídeo não rodar - baixe aqui</a>
+    </video>
+
+    <h2>Testando vídeos não hospedados</h2> <br>
+    <hr>
+
+    Teste 1: Para vídeos do YouTube - Abri vídeo desejado - ir em compartilhar - Incorporar, copiar código de desenvolvedor e colar no VSCode. <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

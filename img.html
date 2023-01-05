@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Testando FAVICON sempre no Head - TAG - link + favicon-->
+    <link rel="shortcut icon" href="imagens/mm.ico" type="image/x-icon">
+    <title>Testando imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Imagem dinâmica</h1>
+        <p>Testando imagens de tamanhos diferentes para se adaptar em vários tamanhos de tela. Ex. celular, tabet e pc ou tv.</p>
+<!--Iniciar com a TAG <picture> e adicionar TAG <img> após TAG <source media type>-->
+        <picture>
+    <!--TAG source media type para adicionar as outras imagens de tamanhos diferentes para se adaptar aos tamanhos de tela-->
+            <source media="(max-width: 750px )" srcset="imagens/img-tamanhos/p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/img-tamanhos/m.png" type="image/png">
+<!--TAG img para adicionar imagem inicial-->
+            <img src="imagens/img-tamanhos/g.png" alt="imagem grande verde">
+            
+        </picture>
+    <hr>
+    <a href="principal.html">Voltar para principal</a>
+</body>
+</html>
